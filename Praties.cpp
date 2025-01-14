@@ -28,6 +28,7 @@ class MyStack{
 
 int main()
 {
+ 
   MyStack st;
   int n;
   cin>>n;

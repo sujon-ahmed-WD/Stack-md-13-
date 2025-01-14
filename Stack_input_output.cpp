@@ -37,6 +37,7 @@ int main()
         st.push(x); 
     }
     // cout<<st.top();
+    st.pop();
     while(!st.empty())
     {
         cout<<st.top()<<endl;
