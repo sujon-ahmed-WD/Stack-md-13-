@@ -13,6 +13,18 @@ class myStack
      {
         v.pop_back();
      }
+     int top()
+     {
+         return v.back();
+     }
+     int size()
+     {
+      return v.size();
+     }
+     bool empty()
+     {
+         return v.empty();
+     }
 
 };
 
