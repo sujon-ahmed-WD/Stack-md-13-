@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-class MyStack
-{
-    public:
+class MyStack{
     vector<int>v;
+    public:
     void push(int val)
     {
         v.push_back(val);
@@ -16,32 +15,32 @@ class MyStack
     {
         return v.back();
     }
+    int empty()
+    {
+    return v.empty();
+    }
     int size()
     {
-        v.size();
+        return v.size();
     }
-    bool empty()
-    {
-        return v.empty();
-    }
+
 };
+
 int main()
 {
-    MyStack st;
-    st.push(10);
-    st.push(20);
-    st.push(30);
-    // st.pop();
-    //  cout<<st.top()<<endl;
-    //  st.pop();
-    //  cout<<st.top()<<endl;
-    //  st.pop();
-    //  cout<<st.top()<<endl;
-    //  st.pop();
-     if(!st.empty())
-     cout<<st.top()<<endl;
-     if(!st.empty()==true)
-       st.pop();
-     cout<<st.top()<<endl;  
+  MyStack st;
+  int n;
+  cin>>n;
+  for(int i=0; i<n; i++)
+  {
+    int x;
+    cin>>x;
+    st.push(x);
+  }
+  while(!st.empty())
+  {
+    cout<<st.top()<<" ";
+    st.pop();
+  }
     return 0;
 }

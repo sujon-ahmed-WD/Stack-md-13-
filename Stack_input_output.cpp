@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 class myStack
 {
 public:
@@ -26,13 +25,22 @@ public:
         return v.empty();
     }
 };
-
 int main()
 {
-    if (!st.empty())
-        cout << st.top() << endl;
-    if (!st.empty() == true)
+    myStack st;
+    int n;
+    cin>>n;
+    for(int i=0; i<n; i++)
+    {
+        int x;
+        cin>>x;
+        st.push(x); 
+    }
+    // cout<<st.top();
+    while(!st.empty())
+    {
+        cout<<st.top()<<endl;
         st.pop();
-    cout << st.top() << endl;
+    }
     return 0;
 }
